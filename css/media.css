@@ -1,0 +1,36 @@
+@media (max-width: 580px) {
+    .sendMail input {
+        width: 200px;
+    }
+    .card-content-info img {
+        width: 230px;
+    }
+    .card-content {
+        margin: 0 27px;
+    }
+    .cardType2 .card-content-wrapper::after {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 495px) {
+    header {
+        padding: 0 30px;
+    }
+    footer {
+        padding: 60px 30px 47px 30px;
+    }
+    .headerContent {
+        font-size: 41px;
+        line-height: 65px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sendMail input {
+        width: 150px;
+    }
+    footer {
+        padding: 60px 30px 47px 30px;
+    }
+}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    color: #FFF;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+input {
+    border: 0px none transparent;
+    outline: none;
+}
+
+button {
+    border: 0px none transparent;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* header */
+
+header {
+    background: url(../img/headerBackgroundImg.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 60px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.navBar li {
+    text-align: right;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+
+.navBar li:hover {
+    animation: shaking 0.3s linear 1;
+}
+
+.headerContent {
+    max-width: 383px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-top: -50px;
+    letter-spacing: 1.8px;
+    text-transform: none;
+}
+
+.links {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 2px solid #FFF;
+    max-width: max-content;
+    margin-bottom: 65px;
+    padding: 22px 48px 0 0;
+}
+
+.links :not(:last-child) {
+    margin-right: 48px;
+}
+
+.link {
+    width: fit-content;
+    font-family: Roboto;
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background: url(../img/icons/vectorRightWhite.svg);
+    left: 100%;
+    transform: translateX(7px);
+}
+
+.link:hover {
+    animation: scale 0.3s linear 1;
+}
+
+/* main */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card {
+    flex: 1;
+    height: 670px;
+    background: #C9A3A4;
+    padding: 60px 0;
+    position: relative;
+}
+
+.card:nth-child(2) {
+    background: #A7CEEF;
+}
+
+
+.card:nth-child(4) {
+    min-width: 100%;
+}
+
+.card:nth-child(2).cardType2,
+.cardType2 {
+    background: url(../img/contentBlock-bottom.png) no-repeat center;
+    background-size: cover;
+}
+
+.card-content {
+    display: flex;
+    margin: 0 60px;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-content-wrapper {
+    margin-bottom: 63px;
+    position: relative;
+}
+
+.card-content-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -34px;
+    border: 1px solid #FFF;
+    background: #FFF;
+}
+
+.cardType2 .card-content-wrapper::after {
+    min-width: 280px;
+    right: 67.5%;
+    bottom: -34px;
+}
+
+.card-content-wrapper-title {
+    font-size: 41px;
+    line-height: 48px;
+    max-width: 267px;
+}
+
+.card-content-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contentStart {
+    justify-content: start;
+}
+
+.card-content-info h4 {
+    display: block;
+    max-width: 337px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+/* footer */
+
+footer {
+    padding: 60px 60px 47px 60px;
+}
+
+.copyright,
+footer li a,
+.contacts h3 {
+    color: #858585;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+footer .nav {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+       
+}
+
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; 
+}
+
+.copyright {
+    max-width: 150px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.navBarCommunication {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 135px;
+}
+
+.contacts h3 {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.sendMail {position: relative;}
+
+.sendMail input {
+    width: 425px;
+    border-bottom: 1px solid #858585;
+    color: #858585;
+    padding: 0 22px 5px 7px;
+}
+
+.sendMail button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
